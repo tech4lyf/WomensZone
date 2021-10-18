@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech4lyf.womenszone" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WomensZone" >
+        <activity
+            android:name=".UploadSelfieActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoansActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MembersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".KYCInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WomensZoneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StaytunedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GreetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainWinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PermissionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

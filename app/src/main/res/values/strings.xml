@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Women\'s Zone</string>
+    <string name="baseurl">https://clients.tech4lyf.com/womenszone/api2/</string>
+</resources>

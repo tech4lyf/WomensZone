@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".PermissionActivity">
+
+    <ImageView
+        android:id="@+id/btn_bck"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginHorizontal="7dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/vc_back"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Permissions"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txt_hd"/>
+
+    <TextView
+        android:id="@+id/view_txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please accept all permission to proceed."
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:layout_marginBottom="10dp"
+        android:paddingHorizontal="20dp"  />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vc_sms" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Financial sms"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/txt_color"
+                        android:id="@+id/txt_hp1"/>
+                    <TextView
+                        android:id="@+id/txt_p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We collect and monitor only financial transaction sms about bank related transactions, the names of the transacting party, description and amount to perform the credit risk assessments, this will help us to perform a quicker loan disbursal. No personal SMS DATA is collected and stored."
+                        android:textSize="12dp"   />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vc_contact"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contacts"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/txt_color"
+                        android:id="@+id/txt_hp2"/>
+                    <TextView
+                        android:id="@+id/txt_p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our app requires this permission to detect references. This will also monitor your contacts informations. This also helps us to assess your profile."
+                        android:textSize="12dp"   />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vc_location"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/txt_color"
+                        android:id="@+id/txt_hp3"/>
+                    <TextView
+                        android:id="@+id/txt_p3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We collect and monitor location information of the device to provide Serviceability. This will help us to verify the address and expedite the kyc process."
+                        android:textSize="12dp"   />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vc_camera"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Camera"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/txt_color"
+                        android:id="@+id/txt_hp4"/>
+                    <TextView
+                        android:id="@+id/txt_p4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We require this permission so that you can easily scan and capture the kyc documents. This ensures that you are provided with the seamless experience while using the application."
+                        android:textSize="12dp"   />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="top|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vc_mik"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Microphone"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/txt_color"
+                        android:id="@+id/txt_hp5"/>
+                    <TextView
+                        android:id="@+id/txt_p5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We may require this permission to initiate 2 way audio communication as the part kyc process. This may need stored for future verification purpose."
+                        android:textSize="12dp"   />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:gravity="top|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vc_mik"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Permissions"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/txt_color"
+                        android:id="@+id/txt_hp6"/>
+                    <TextView
+                        android:id="@+id/txt_p6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="12dp"   />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_tc1"/>
+        <TextView
+            android:id="@+id/txt_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to Terms , Conditions and Privacy Policy ."  />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="I Disagree"
+            android:textAllCaps="false"
+            android:id="@+id/txt_fls"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_corner"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/txt_tru"
+            android:text="Allow"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

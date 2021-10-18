@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelfieUploader">
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:src="@drawable/vc_back"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/btn_bck"
+        android:clickable="true"
+        android:visibility="gone"
+        android:layout_gravity="left"
+        android:layout_marginHorizontal="7dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Selfie"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's understand you better"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/grey"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selfie Image"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dash_line_short"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:src="@drawable/vc_upload"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload File"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="File size not more than 300kb"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/camera"
+            android:keepScreenOn="true"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp" />
+
+
+        <ImageView
+            android:id="@+id/imgSelfPrev"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/vc_image" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginHorizontal="40dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:id="@+id/btn_capture"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginHorizontal="40dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:id="@+id/btn_uploadSelfie"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Re-Capture"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginHorizontal="40dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:id="@+id/btn_retake"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
